@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Roohaniyat Notes</string>
+    <string name="add_note">Add Note</string>
+    <string name="enter_title">Enter the title</string>
+    <string name="enter_des">Enter the description</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="error_field_required">Error Field is Required\n</string>
+</resources>

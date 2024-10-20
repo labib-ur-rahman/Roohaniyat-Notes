@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNoteActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitStart"
+        android:src="@drawable/blue_bg_top__recovered_"
+        app:layout_constraintDimensionRatio="w,1:0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_heading"
+        style="@style/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="136dp"
+        android:text="@string/add_note"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.005" />
+
+    <ImageView
+        android:id="@+id/btn_done"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="92dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_heading"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_heading"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/done_48" />
+
+    <EditText
+        android:id="@+id/et_title"
+        style="@style/editText"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:hint="@string/enter_title"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_heading"
+        app:layout_constraintTop_toBottomOf="@+id/tv_heading" />
+
+    <EditText
+        android:id="@+id/et_des"
+        style="@style/editText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/hind_siliguri"
+        android:gravity="top"
+        android:hint="@string/enter_des"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_heading"
+        app:layout_constraintTop_toBottomOf="@+id/et_title" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
